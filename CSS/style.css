@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.head {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  height: 150px;
+  overflow: hidden;
+}
+.head .efect {
+  position: absolute;
+}
+.head .efect:nth-child(1) {
+  top: -50px;
+  left: 280px;
+  width: 30px;
+  height: 250px;
+  z-index: -1;
+  background: white;
+  transform: rotate(-25deg);
+}
+.head .efect:nth-child(2) {
+  top: -50px;
+  left: 920px;
+  width: 15px;
+  height: 250px;
+  z-index: -1;
+  background: white;
+  transform: rotate(-25deg);
+}
+.head .efect:nth-child(3) {
+  top: -50px;
+  left: 940px;
+  width: 4px;
+  height: 250px;
+  z-index: -1;
+  background: white;
+  transform: rotate(-25deg);
+}
+.head .efect:nth-child(4) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: rgb(17, 120, 221);
+}
+.head .titlebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .titlebox .img {
+  font-size: 4.5rem;
+  color: black;
+  padding-left: 25px;
+}
+.head .titlebox .name {
+  font-size: 2.5rem;
+  font-family: 'Gugi', cursive;
+  color: black;
+  padding-right: 15px;
+}
+.head .menubox {
+  margin: auto 0;
+}
+.head .menubox .menulist {
+  display: flex;
+}
+.head .menubox .menulist .item {
+  font-size: 1.5rem;
+  font-family: 'Gugi', cursive;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+}
+.head .menubox .menulist li {
+  transition: .3s;
+}
+.head .menubox .menulist li:hover {
+  transform: scale(1.2);
+}
+.head .menubox .menulist .item:hover {
+  color: white;
+}
+.head .menubox .menubtn {
+  display: none;
+}
+.head .userbox {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 0 0;
+}
+.head .userbox .user {
+  font-size: 1rem;
+  font-family: 'Gugi', cursive;
+  color: black;
+  padding: 5px;
+}
+.head .userbox .user:hover {
+  color: white;
+}
+
+@media (max-width: 500px) {
+
+}
