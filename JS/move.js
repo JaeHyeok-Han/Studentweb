@@ -3,4 +3,5 @@ const menulist = document.querySelector('.head .menubox');
 
 menubtn.addEventListener('click', function() {
  menulist.classList.toggle('open');
+ menubtn.classList.toggle('open');
 });

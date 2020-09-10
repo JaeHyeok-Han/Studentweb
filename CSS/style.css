@@ -105,9 +105,6 @@
 .head .menubtn {
   display: none;
 }
-.head .menubtn:hover {
-  color: white;
-}
 
 @media (max-width: 500px) {
   .head {
@@ -129,7 +126,7 @@
   }
   .head .menubox {
     position: absolute;
-    top: -170px;
+    top: -180px;
     width: 100vw;
     text-align: center;
   }
@@ -170,5 +167,15 @@
     display: inline;
     text-align: right;
     padding: 5px;
+  }
+  .head .menubtn.open {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: translateY(-50%);
+    display: inline;
+    text-align: right;
+    padding: 5px;
+    color: white;
   }
 }
