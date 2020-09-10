@@ -178,4 +178,12 @@
     padding: 5px;
     color: white;
   }
+  .imgbox {
+    margin: 0 auto 0;
+    width: 100vw;
+    height: 200px;
+  }
+  .imgbox img {
+    width: 100vw;
+  }
 }
