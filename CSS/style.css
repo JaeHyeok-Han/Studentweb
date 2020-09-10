@@ -67,6 +67,7 @@
 }
 .head .menubox {
   margin: auto 0;
+  transition: .6s;
 }
 .head .menubox .menulist {
   display: flex;
@@ -79,16 +80,13 @@
   margin: 10px;
 }
 .head .menubox .menulist li {
-  transition: .3s;
+  transition: .8s;
 }
 .head .menubox .menulist li:hover {
   transform: scale(1.2);
 }
 .head .menubox .menulist .item:hover {
   color: white;
-}
-.head .menubox .menubtn {
-  display: none;
 }
 .head .userbox {
   display: flex;
@@ -104,7 +102,73 @@
 .head .userbox .user:hover {
   color: white;
 }
+.head .menubtn {
+  display: none;
+}
+.head .menubtn:hover {
+  color: white;
+}
 
 @media (max-width: 500px) {
-
+  .head {
+    background: rgb(17, 120, 221);
+    width: 100vw;
+    height: 60px;
+    overflow: visible;
+  }
+  .head .efect {
+    display: none;
+  }
+  .head .titlebox .img {
+    font-size: 1.8rem;
+    padding-left: 15px;
+  }
+  .head .titlebox .name {
+    font-size: 1.5rem;
+    padding: none;
+  }
+  .head .menubox {
+    position: absolute;
+    top: -170px;
+    width: 100vw;
+    text-align: center;
+  }
+  .head .menubox.open {
+    position: absolute;
+    top: 60px;
+    width: 100vw;
+    text-align: center;
+  }
+  .head .menubox .menulist {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .head .menubox .menulist li {
+    width: 100vw;
+    padding: 5px 0;
+  }
+  .head .menubox .menulist li:hover {
+    transform: none;
+  }
+  .head .menubox .menulist .item {
+    font-size: 1.2rem;
+    padding: 7px 120px;
+    margin: 0;
+  }
+  .head .userbox {
+    margin: auto 40px auto 0;
+    z-index: 1;
+  }
+  .head .userbox .user {
+    font-size: .8rem;
+  }
+  .head .menubtn {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: translateY(-50%);
+    display: inline;
+    text-align: right;
+    padding: 5px;
+  }
 }
