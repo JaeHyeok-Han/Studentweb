@@ -20,7 +20,7 @@
   width: 30px;
   height: 250px;
   z-index: -1;
-  background: white;
+  background: rgb(17, 120, 221);
   transform: rotate(-25deg);
 }
 .head .efect:nth-child(2) {
@@ -29,7 +29,7 @@
   width: 15px;
   height: 250px;
   z-index: -1;
-  background: white;
+  background: rgb(17, 120, 221);
   transform: rotate(-25deg);
 }
 .head .efect:nth-child(3) {
@@ -38,16 +38,8 @@
   width: 4px;
   height: 250px;
   z-index: -1;
-  background: white;
-  transform: rotate(-25deg);
-}
-.head .efect:nth-child(4) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
   background: rgb(17, 120, 221);
+  transform: rotate(-25deg);
 }
 .head .titlebox {
   display: flex;
@@ -68,6 +60,7 @@
 .head .menubox {
   margin: auto 0;
   transition: .6s;
+  z-index: 1;
 }
 .head .menubox .menulist {
   display: flex;
@@ -80,13 +73,13 @@
   margin: 10px;
 }
 .head .menubox .menulist li {
-  transition: .8s;
+  transition: .5s;
 }
 .head .menubox .menulist li:hover {
   transform: scale(1.2);
 }
 .head .menubox .menulist .item:hover {
-  color: white;
+  color: rgb(17, 120, 221);
 }
 .head .userbox {
   display: flex;
@@ -100,7 +93,7 @@
   padding: 5px;
 }
 .head .userbox .user:hover {
-  color: white;
+  color: rgb(17, 120, 221);
 }
 .head .menubtn {
   display: none;
@@ -110,7 +103,7 @@
   .head {
     background: rgb(17, 120, 221);
     width: 100vw;
-    height: 60px;
+    height: 50px;
     overflow: visible;
   }
   .head .efect {
@@ -132,13 +125,13 @@
   }
   .head .menubox.open {
     position: absolute;
-    top: 60px;
+    top: 59px;
     width: 100vw;
     text-align: center;
   }
   .head .menubox .menulist {
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
   }
   .head .menubox .menulist li {
     width: 100vw;
@@ -151,17 +144,20 @@
     font-size: 1.2rem;
     padding: 7px 120px;
     margin: 0;
+    color: white;
+  }
+  .head .menubox .menulist .item:hover {
+    color: black;
   }
   .head .userbox {
     margin: auto 40px auto 0;
-    z-index: 1;
   }
   .head .userbox .user {
     font-size: .8rem;
   }
   .head .menubtn {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 10px;
     transform: translateY(-50%);
     display: inline;
@@ -170,20 +166,12 @@
   }
   .head .menubtn.open {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 10px;
     transform: translateY(-50%);
     display: inline;
     text-align: right;
     padding: 5px;
     color: white;
-  }
-  .imgbox {
-    margin: 0 auto 0;
-    width: 100vw;
-    height: 200px;
-  }
-  .imgbox img {
-    width: 100vw;
   }
 }

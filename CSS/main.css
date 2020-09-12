@@ -53,8 +53,21 @@
   }
 }
 
+.wisebox {
+  width: 100vw;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wisebox .wise {
+  margin: 10px auto;
+  font-size: 1.5rem;
+  font-family: 'East Sea Dokdo', cursive;
+  text-align: center;
+}
 .imgbox {
-  margin: 10px auto 0;
+  margin: 0 auto;
   width: 1080px;
   height: 500px;
   position: relative;
@@ -76,6 +89,12 @@
 .imgbox img:nth-child(3) {
   animation: view3 12s infinite;
 }
+.middle {
+  margin: 0 auto;
+  width: 1080px;
+  height: 350px;
+  display: flex;
+}
 
 @media (max-width: 500px) {
   .imgbox {
@@ -85,5 +104,14 @@
   }
   .imgbox img {
     width: 100vw;
+  }
+  .wisebox {
+    /* border-bottom: 1px solid #9e9e9e; */
+    position: absolute;
+    top: 250px;
+  }
+  .wisebox .wise {
+    margin: 5px auto;
+    font-size: 1.2rem;
   }
 }
